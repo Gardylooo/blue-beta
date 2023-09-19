@@ -1,0 +1,30 @@
+[debug] [2023-09-19T18:06:36.839Z] ----------------------------------------------------------------------
+[debug] [2023-09-19T18:06:36.841Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-09-19T18:06:36.841Z] CLI Version:   11.14.1
+[debug] [2023-09-19T18:06:36.841Z] Platform:      darwin
+[debug] [2023-09-19T18:06:36.842Z] Node Version:  v16.16.0
+[debug] [2023-09-19T18:06:36.843Z] Time:          Tue Sep 19 2023 23:06:36 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-09-19T18:06:36.843Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-19T18:06:36.916Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-19T18:06:36.917Z] > authorizing via signed-in user (abdullah.sarwar1003@gmail.com)
+[debug] [2023-09-19T18:06:36.917Z] [iam] checking project blue-bd790 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-19T18:06:36.919Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/blue-bd790:testIamPermissions [none]
+[debug] [2023-09-19T18:06:36.920Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/blue-bd790:testIamPermissions x-goog-quota-user=projects/blue-bd790
+[debug] [2023-09-19T18:06:36.920Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blue-bd790:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-19T18:06:40.253Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/blue-bd790:testIamPermissions 200
+[debug] [2023-09-19T18:06:40.254Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blue-bd790:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-19T18:06:40.256Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/blue-bd790 [none]
+[debug] [2023-09-19T18:06:41.096Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/blue-bd790 200
+[debug] [2023-09-19T18:06:41.097Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/blue-bd790 {"projectId":"blue-bd790","projectNumber":"992253311573","displayName":"blue","name":"projects/blue-bd790","resources":{"hostingSite":"blue-bd790"},"state":"ACTIVE","etag":"1_5f967e4d-c6a0-4fa9-a027-7ae270215d71"}
+[debug] [2023-09-19T18:07:05.883Z] Error: Build failed because of webpack errors
+    at webpackBuildImpl (/Users/saarrrwar/Desktop/blue/node_modules/next/dist/build/webpack-build/impl.js:270:21)
+    at async webpackBuild (/Users/saarrrwar/Desktop/blue/node_modules/next/dist/build/webpack-build/index.js:137:16)
+    at async /Users/saarrrwar/Desktop/blue/node_modules/next/dist/build/index.js:595:123
+    at async Span.traceAsyncFn (/Users/saarrrwar/Desktop/blue/node_modules/next/dist/trace/trace.js:105:20)
+    at async build (/Users/saarrrwar/Desktop/blue/node_modules/next/dist/build/index.js:148:29)
+    at async build (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:33:5)
+    at async prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:226:93)
+    at async deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:50:13)
+[error] 
+[error] Error: An unexpected error has occurred.
